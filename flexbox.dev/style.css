@@ -1,0 +1,51 @@
+ul {
+  list-style-type:none;
+}
+
+article, figure, section, aside, body > header {
+  outline: solid 1px;
+}
+
+h2, h3, h1, figcaption {
+  font-family: "Roboto", sans-serif;  
+}
+
+p, a {
+  font-family: "Raleway", sans-serif;
+}
+
+figcaption {
+  font-weight: 100;
+  font-style: italic;
+  color: #000405;  
+}
+
+a {
+  text-decoration: underline;
+  font-style: italic;
+  color: #000405;
+}
+
+article, nav {
+  margin: 10px;
+}
+
+footer {
+  margin-top : 10px;
+}
+
+body > header h1 {
+  font-size: 50px;
+}
+
+article > h1 {
+  font-size: 30px;
+}
+
+article > header h1 {
+  font-size: 20px;
+}
+
+article > header h2 {
+  font-size: 15px;
+}
