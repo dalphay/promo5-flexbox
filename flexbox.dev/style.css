@@ -1,5 +1,6 @@
 ul {
   list-style-type:none;
+  padding: 0;
 }
 
 article, figure, section, aside, body > header {
@@ -12,6 +13,11 @@ h2, h3, h1, figcaption {
 
 p, a {
   font-family: "Raleway", sans-serif;
+}
+
+figure {
+  margin: 10px;
+  padding: 10px;
 }
 
 figcaption {
@@ -48,4 +54,58 @@ article > header h1 {
 
 article > header h2 {
   font-size: 15px;
+}
+
+.container-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.container-column {
+  display: flex;
+  flex-direction: column;
+}
+
+header nav {
+  flex-grow: 2;
+  align-items: flex-end;
+}
+
+.main-menu {
+  flex-basis: 100%;
+  justify-content: space-around;
+}
+
+.main-content {
+  align-items: flex-start;
+}
+
+.article-content {
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.article-content p {
+  flex-basis: 50%;
+}
+
+.article-content p:nth-of-type(2) {
+  order: 1;
+}
+/*
+is equivalent to :
+.article-content p:nth-child(3) {
+  order: 1;
+}
+
+see https://la-cascade.io/nth-child/
+*/
+
+body > footer {
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.footer-menu ul {
+  margin-left: 10px;
 }
